@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table{       
+        border: 4px dotted;
+        border-color: orange;
+        background-color:yellow;
+        margin: auto; 
+      }
+.blink{
+        margin:50px;
+        background-color: grey;
+        padding: 20px;
+        text-align: center;
+        line-height: 100px;
+    }
+    span{
+        font-size: 25px;
+        color: lightblue;
+        animation: blink 1s linear infinite;
+    }
+@keyframes blink{
+                    0%{opacity: 0;}
+                    70%{opacity: .5;}
+                    100%{opacity: 1;}
+                }
+    </style>            
+
+    <title>Squares and Cubes</title>
+</head>
+    <body>
+        <table border="2" align="center">
+            <tr>
+            <td colspan="3"><center>Squares and cubes</center></td>
+            </tr>
+            <tr>
+            <td>Numbers</td>
+            <td>Square numbers</td>
+            <td>Cube numbers</td>
+            </tr>
+            <script type="text/javascript">
+                for(var i=0; i<=10; i=i+1)
+                {
+                    document.write("<tr align='center'><td>" + i + "</td><td>" + i*i +"</td><td>" + i*i*i + "</td></tr>")
+                }
+            </script>
+        </table>
+     <center><h1= class="blink"><span>!! SUCCESSFULL👍🏻 !!</span></h1></center>
+    </body>
+</html>
